@@ -1,1 +1,1 @@
-# genolabgabon.github.io
+# genolab-ga.github.io
