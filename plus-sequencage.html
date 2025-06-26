@@ -3,20 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Séquençage</title>
+    <style>
+        /* Styles pour centrer et gérer la largeur de la vidéo */
+        .video-wrapper {
+            max-width: 800px; /* Ajustez cette valeur si vous le souhaitez */
+            margin: 0 auto;  /* Centrage horizontal */
+            margin-bottom: 20px; /* Un peu d'espace sous la vidéo */
+        }
+        /* Assurez-vous que l'iframe Vimeo à l'intérieur est bien responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Ratio 16:9 (9/16 = 0.5625) */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Séquençage et pré-traitement</h1>
+    <p>Cette page contient des informations détaillées sur le séquençage et le pré-traitement des données. Voici une vidéo explicative :</p>
 
-  <div class="video-container" style="padding:56.25% 0 0 0;position:relative;">
-    <iframe src="https://player.vimeo.com/video/1096429978?h=0749e05d14&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            title="Le_séquençage_du_génome">
-    </iframe>
-</div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="video-wrapper">
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/1096429978?h=0749e05d14&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    title="Le_séquençage_du_génome">
+            </iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+
+    <p>N'hésitez pas à nous contacter pour plus d'informations.</p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
 
 </body>
 </html>
