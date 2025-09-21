@@ -1,0 +1,33 @@
+body {
+    /* Fond sombre pour un style de terminal/code */
+    background-color: #1a1a2e; /* Violet foncé */
+    color: #e5e5f7; /* Gris clair pour le texte */
+    font-family: 'Courier New', Courier, monospace; /* Police monospace pour un style de code */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour le titre principal */
+h1 {
+    color: #00ff7f; /* Vert néon pour un effet "glow" */
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 2px solid #00ff7f;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* Style du conteneur Giscus pour le centrer */
+.giscus {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Vous pouvez aussi cibler Giscus directement pour une personnalisation plus avancée */
+/* Par exemple, si vous voulez changer la couleur de fond de Giscus */
+/* Cela peut ne pas toujours fonctionner car Giscus est un iframe */
+.giscus-frame {
+    border: 2px solid #00ff7f;
+    border-radius: 8px;
+}
