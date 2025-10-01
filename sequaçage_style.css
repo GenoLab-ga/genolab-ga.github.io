@@ -1,29 +1,35 @@
-/* Styles généraux pour le corps de la page */
+/* Thème Sombre : Pour que ce ne soit plus "trop clair" */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Fond très foncé */
+    color: #f0f0f0; /* Texte clair */
+}
+
+/* Structure de base du contenu */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
     padding: 20px;
-    background-color: #282c34; /* Couleur de fond foncée */
-    color: #e0e0e0; /* Couleur du texte claire */
 }
 
 /* Styles pour les titres */
-h1, h2, h3 {
-    color: #61dafb; /* Couleur bleue claire pour les titres */
+h1, h2 {
+    color: #61dafb; /* Couleur vive pour les titres principaux */
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 0;
 }
 
-/* Styles pour les paragraphes */
-p {
-    margin-bottom: 1em;
-    text-align: justify;
+h3 {
+    color: #98c379; /* Une autre couleur pour les sous-titres */
+    margin-top: 25px;
 }
 
 /* Styles pour les liens */
 a {
-    color: #98c379; /* Couleur verte claire pour les liens */
+    color: #b39ddb; /* Couleur violette claire pour les liens */
     text-decoration: none;
 }
 
@@ -31,99 +37,79 @@ a:hover {
     text-decoration: underline;
 }
 
-/* En-tête (header) */
-header {
-    text-align: center;
-    margin-bottom: 40px;
+/* Mise en forme de l'en-tête et du pied de page */
+header, footer {
     padding: 20px;
-    background-color: #3a3f4b; /* Fond légèrement plus clair que le body */
-    border-radius: 8px;
-}
-
-header p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #2a2a2a; /* Une nuance de gris foncé */
     text-align: center;
+    border-bottom: 2px solid #3e3e3e;
 }
 
-/* Conteneur principal */
-main {
-    max-width: 1000px; /* Largeur maximale pour le contenu */
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #3a3f4b; /* Fond du contenu principal */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+footer {
+    margin-top: 40px;
+    border-top: 2px solid #3e3e3e;
+    border-bottom: none;
 }
 
-/* Section vidéo */
+
+/* --- Section Vidéo --- */
+
 .video-section {
-    margin-bottom: 40px;
     padding: 20px;
-    background-color: #495057; /* Fond un peu différent pour la section vidéo */
+    margin-bottom: 40px;
+    background-color: #2a2a2a; /* Fond de la section vidéo */
     border-radius: 8px;
 }
 
 /* Styles pour centrer et gérer la largeur de la vidéo */
 .video-wrapper {
-    max-width: 800px; /* Ajustez cette valeur si vous le souhaitez */
+    max-width: 800px; 
     margin: 0 auto;  /* Centrage horizontal */
-    margin-bottom: 20px; /* Un peu d'espace sous la vidéo */
 }
 
 /* Assurez-vous que l'iframe Vimeo à l'intérieur est bien responsive */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Ratio 16:9 (9/16 = 0.5625) */
+    padding-bottom: 56.25%; /* Ratio 16:9 */
     height: 0;
     overflow: hidden;
-    background-color: #000; /* Fond noir pour la vidéo */
-    border-radius: 8px;
+    background-color: #000;
 }
+
 .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 6px; /* Bords légèrement arrondis pour l'iframe */
 }
 
-/* Section projet */
+
+/* --- Section Projet (Texte) --- */
+
 .project-section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #495057; /* Fond un peu différent pour la section projet */
+    padding: 30px;
+    background-color: #2a2a2a; /* Fond de la section projet */
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre légère */
 }
 
-.project-section h2 {
-    color: #61dafb;
-    margin-bottom: 15px;
+.project-section p {
+    text-align: justify;
 }
 
-.project-section h3 {
-    color: #98c379;
-    margin-top: 25px;
+.methodology-list {
+    list-style-type: '🧬 '; /* Utilisation d'un emoji pour les points de la liste */
+    padding-left: 20px;
+}
+
+.methodology-list li {
     margin-bottom: 10px;
 }
 
-.project-section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.project-section ul li {
-    margin-bottom: 8px;
-}
-
-/* Pied de page (footer) */
-footer {
+.project-content .links {
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #3a3f4b;
-    border-radius: 8px;
-    font-size: 0.9em;
+    margin-top: 30px;
+    font-size: 1.1em;
 }
