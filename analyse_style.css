@@ -1,53 +1,65 @@
-/* --- Styles pour les Sections d'Outils/Codes --- */
+/* --- Ajustements pour le Thème Bioinformatique Sombre --- */
 
-.tool-section {
-    padding: 30px;
-    margin-bottom: 40px;
+/* Général : Assurez-vous que ces couleurs de base sont présentes */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Fond très foncé */
+    color: #f0f0f0; /* Texte clair */
+}
+
+/* --- Centrage des Titres et Couleurs --- */
+
+/* Titres Principaux (h1, h2) : Centrés et Nouvelle Couleur */
+h1 {
+    color: #2ecc71; /* Vert émeraude : très représentatif du monde du codage/bioinfo */
+    text-align: center; /* Titre principal centré */
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+/* Titres de Section (h2) : Centrés pour un meilleur impact visuel sur la page d'analyse */
+/* NOTE : Si vous préférez qu'ils soient à gauche, changez 'center' par 'left' */
+h2 {
+    color: #3498db; /* Bleu vif pour les titres de section */
+    text-align: center; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Sous-Titres (h3) : Laissez-les à gauche pour l'organisation des sous-sections */
+h3 {
+    color: #98c379; /* Vert clair pour l'emphase (comme le code) */
+    text-align: left; /* Conserver à gauche pour la lisibilité des sous-sections */
+    margin-top: 25px;
+}
+
+/* En-tête (header) : Mieux séparé du titre principal */
+header {
+    padding: 20px;
     background-color: #2a2a2a;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-bottom: 3px solid #3498db; /* Souligne l'en-tête avec la couleur bleue */
 }
 
-.tool-section h2, .tool-section h3 {
-    text-align: left; /* Aligner les titres de section à gauche */
-}
+/* --- Styles pour les Codes (pour l'effet Bioinfo) --- */
 
 /* Bloc de code */
 .code-block-wrapper {
     margin: 20px 0;
     padding: 15px;
-    background-color: #1e1e1e; /* Fond très sombre pour le code */
-    border: 1px solid #3a3a3a;
+    background-color: #0d1a26; /* Bleu très foncé/noir pour simuler une console */
+    border: 1px solid #1a3c5a;
     border-radius: 4px;
-    overflow-x: auto; /* Permet de scroller si le code est trop long */
+    overflow-x: auto; 
 }
 
 .code-block {
     font-family: 'Consolas', 'Courier New', monospace;
     font-size: 0.9em;
-    color: #f7b849; /* Couleur orange/jaune pour le texte du code */
-    white-space: pre-wrap; /* Assure que le texte s'enroule si nécessaire */
+    color: #a7f3d0; /* Vert menthe clair pour simuler le texte de console */
+    white-space: pre-wrap;
     margin: 0;
-}
-
-/* Conteneur d'image de résultat */
-.result-image-wrapper {
-    text-align: center;
-    margin: 30px 0;
-    padding: 15px;
-    background-color: #1e1e1e;
-    border-radius: 8px;
-}
-
-.result-image {
-    max-width: 90%; /* Limite la taille de l'image à 90% du conteneur */
-    height: auto;
-    border: 2px solid #555;
-    border-radius: 4px;
-}
-
-.image-caption {
-    font-size: 0.85em;
-    color: #a0a0a0; /* Texte de légende plus discret */
-    margin-top: 10px;
 }
