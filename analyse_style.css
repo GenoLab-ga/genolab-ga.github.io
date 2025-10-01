@@ -12,38 +12,39 @@ body {
 
 /* --- Centrage des Titres et Couleurs --- */
 
-/* Titres Principaux (h1, h2) : Centrés et Nouvelle Couleur */
+/* Titre Principal (H1) - Doit être centré et en Vert Émeraude */
 h1 {
-    color: #2ecc71; /* Vert émeraude : très représentatif du monde du codage/bioinfo */
-    text-align: center; /* Titre principal centré */
+    color: #2ecc71; /* Vert Émeraude */
+    text-align: center; /* Centrage appliqué ici */
     margin-top: 0;
     padding-bottom: 10px;
 }
 
-/* Titres de Section (h2) : Centrés pour un meilleur impact visuel sur la page d'analyse */
-/* NOTE : Si vous préférez qu'ils soient à gauche, changez 'center' par 'left' */
-h2 {
-    color: #3498db; /* Bleu vif pour les titres de section */
-    text-align: center; 
+/* En-tête de la Page */
+header {
+    padding: 20px;
+    background-color: #2a2a2a;
+    text-align: center; /* Important pour centrer les éléments à l'intérieur du header, y compris p */
+    border-bottom: 3px solid #3498db; /* Souligne l'en-tête */
+}
+
+
+/* Titres de Section (H2) - Doivent être centrés et en Bleu Vif */
+/* Note: Ces titres doivent être à l'intérieur d'une section pour être centrés correctement par le CSS */
+.tool-section h2 { /* Cibler H2 uniquement dans les sections d'outils */
+    color: #3498db; /* Bleu Vif */
+    text-align: center; /* Centrage appliqué ici */
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-/* Sous-Titres (h3) : Laissez-les à gauche pour l'organisation des sous-sections */
+/* Sous-Titres (H3) */
 h3 {
-    color: #98c379; /* Vert clair pour l'emphase (comme le code) */
-    text-align: left; /* Conserver à gauche pour la lisibilité des sous-sections */
+    color: #98c379; /* Vert clair */
+    text-align: left; 
     margin-top: 25px;
+    margin-bottom: 15px;
 }
-
-/* En-tête (header) : Mieux séparé du titre principal */
-header {
-    padding: 20px;
-    background-color: #2a2a2a;
-    text-align: center;
-    border-bottom: 3px solid #3498db; /* Souligne l'en-tête avec la couleur bleue */
-}
-
 /* --- Styles pour les Codes (pour l'effet Bioinfo) --- */
 
 /* Bloc de code */
