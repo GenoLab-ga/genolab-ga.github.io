@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><meta charset="UTF-8"><title>Analyse</title></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Analyse Bioinformatique Avancée</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
 <body>
-<h1>Analyse bioinformatique avancée</h1>
-<video controls width="600">
-  <source src="video-analyse.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la vidéo.
-</video>
+
+    <header>
+        <h1>Analyse Bioinformatique Avancée</h1>
+        <p>Cette section présente les outils et les pipelines utilisés pour l'alignement, l'annotation, la détection de variants et la métagénomique.</p>
+    </header>
+
+    <main>
+        <section class="tool-section">
+            <h2>1. Contrôle Qualité des Données (FastQC)</h2>
+            <p>
+                Avant toute analyse, il est crucial d'évaluer la qualité des séquences brutes. Nous utilisons l'outil **FastQC** pour générer des rapports détaillés sur les données *raw reads*. Cela nous permet d'identifier les problèmes potentiels comme les adaptateurs, la faible qualité des bases, ou les biais de composition.
+            </p>
+            
+            <h3>Code d'Exécution</h3>
+            <div class="code-block-wrapper">
+                <pre class="code-block">
+# Charger le module FastQC (si nécessaire sur un serveur)
+module load fastqc 
+
+# Exécuter FastQC sur le fichier de séquences (ici 'sample_R1.fastq.gz')
+fastqc sample_R1.fastq.gz
+
+# L'option -o spécifie le dossier de sortie pour les résultats
+# fastqc -o /chemin/vers/dossier/resultats /chemin/vers/fichier.fastq.gz
+                </pre>
+            </div>
+            
+            <h3>Résultat Clé : Distribution de Qualité des Bases</h3>
+            <p>
+                Le graphique ci-dessous illustre la distribution de la qualité des bases (scores Phred) par position de lecture. Un score élevé (au-dessus de 30) est recherché.
+            </p>
+            
+            <div class="result-image-wrapper">
+                <img src="chemin/vers/votre/image_fastqc_per_base_quality.png" alt="Graphique de qualité par base FastQC" class="result-image">
+                <p class="image-caption">Exemple de graphique FastQC montrant la qualité par base. Les boîtes vertes indiquent une bonne qualité.</p>
+            </div>
+            
+        </section>
+        
+        <section class="tool-section">
+            <h2>2. Alignement et Cartographie des Séquences (BWA)</h2>
+            <p>
+                ... Ajoutez ici votre description, votre code BWA, et un résultat clé ...
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </footer>
+
 </body>
 </html>
