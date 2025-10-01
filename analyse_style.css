@@ -1,0 +1,53 @@
+/* --- Styles pour les Sections d'Outils/Codes --- */
+
+.tool-section {
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tool-section h2, .tool-section h3 {
+    text-align: left; /* Aligner les titres de section à gauche */
+}
+
+/* Bloc de code */
+.code-block-wrapper {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1e1e1e; /* Fond très sombre pour le code */
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    overflow-x: auto; /* Permet de scroller si le code est trop long */
+}
+
+.code-block {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #f7b849; /* Couleur orange/jaune pour le texte du code */
+    white-space: pre-wrap; /* Assure que le texte s'enroule si nécessaire */
+    margin: 0;
+}
+
+/* Conteneur d'image de résultat */
+.result-image-wrapper {
+    text-align: center;
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+}
+
+.result-image {
+    max-width: 90%; /* Limite la taille de l'image à 90% du conteneur */
+    height: auto;
+    border: 2px solid #555;
+    border-radius: 4px;
+}
+
+.image-caption {
+    font-size: 0.85em;
+    color: #a0a0a0; /* Texte de légende plus discret */
+    margin-top: 10px;
+}
